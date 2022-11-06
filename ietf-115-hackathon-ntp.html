@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IETF Hackathon - NTP </title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      div.left-column  { width: 49%; float: left; }
+      div.right-column { width: 49%; float: right; }
+
+      div.right-column ~ p { clear: both; }
+      div.right-column ~ ul { clear: both; }
+      div.my-footer {
+        border-top: 1px solid #ccc;
+        font-size: 10pt;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+      }
+      
+      div.my-footer p {
+        margin-top: 10px;
+        height: 30px;
+      }
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# IETF Hackathon - NTP
+      
+IETF 115
+      
+5-6 November 2022
+
+London
+
+      
+---
+
+# Hackathon Plan
+
+ - NTPv5 Draft: draft-mlichvar-ntp-ntpv5-05
+ - Focus on (experimental) interoperable implementations
+ - Figuring out technical issues in the draft
+        
+<div class="my-footer"><p>IETF Hackathon - NTP </p></div>       
+---
+
+# What got done
+
+ - Got two experimental implementations:
+   - Miroslav's ntp5-exp (https://github.com/mlichvar/ntp5-exp)
+   - NTPD-rs ntpv5 branch (https://github.com/memorysafety/ntpd-rs/tree/ntpv5)
+ - Verified compatibility
+ - Specified and implemented draft identification
+ - Identified a few minor issues in NTPD-rs implementation
+ - Discussions on timescales and leap seconds
+        
+<div class="my-footer"><p>IETF Hackathon - NTP </p></div>       
+---
+        
+# What we learned
+
+ - Timescale offsets, especially for UT1, will need some rethinking.
+ - Identified need for KoD-type mechanism in NTPv5
+        
+<div class="my-footer"><p>IETF Hackathon - NTP </p></div>      
+
+---
+ # Wrap up
+  ---  
+        
+        
+.left-column[ 
+#### Team members:
+ 
+ - K. O'Donoghue
+ - D. Sibold 
+ - M. Lichvar
+ - C. Weinigel
+ - D. Venhoek
+        
+        ]
+.right-column[ 
+#### links:
+ 
+ - https://datatracker.ietf.org/doc/draft-mlichvar-ntp-ntpv5/
+ - https://github.com/mlichvar/ntp5-exp
+ - https://github.com/memorysafety/ntpd-rs/tree/ntpv5
+        
+        ]
+
+<div class="my-footer"><p>IETF Hackathon - project name </p></div>
+        
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
