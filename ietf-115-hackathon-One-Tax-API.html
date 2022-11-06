@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IETF Hackathon - One Tax API </title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      div.left-column  { width: 49%; float: left; }
+      div.right-column { width: 49%; float: right; }
+
+      div.right-column ~ p { clear: both; }
+      div.right-column ~ ul { clear: both; }
+      div.my-footer {
+        border-top: 1px solid #ccc;
+        font-size: 10pt;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+      }
+      
+      div.my-footer p {
+        margin-top: 10px;
+        height: 30px;
+      }
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# IETF Hackathon:  One Tax API
+      
+IETF 115
+      
+5-6 November 2022
+
+London
+
+      
+---
+
+# Hackathon Plan
+
+- What problem were you working on?
+ - [RFC 8032](https://datatracker.ietf.org/doc/html/rfc8032)
+- Specific problems to solve
+ - Determine good set of test vectors
+         
+- How you planned to solve it?
+  - Try test vectors from [Chalkias, Garillot and Nikolaenko](https://eprint.iacr.org/2020/1244) on a variety of libraries
+      
+<div class="my-footer"><p>IETF Hackathon - One Tax API </p></div>       
+---
+
+# What got done
+        
+- What you achieved? (key results)
+ - Add tests for
+   - [LibreSSL](https://www.libressl.org/releases.html)
+   - [WolfSSL](https://github.com/wolfSSL/wolfssl)
+   - [LibGcrypt](https://www.gnupg.org/software/libgcrypt/index.html)
+ - New code
+      - Tmplement test for [NaCl](https://github.com/bkmgit/ed25519-speccheck/tree/more-libraries)
+         
+<div class="my-footer"><p>IETF Hackathon - One Tax API </p></div>       
+---
+        
+# What we learned
+
+Lessons learned from this hackathon
+ - NaCl and NaCl.js pass and fail the same tests from [Chalkias, Garillot and Nikolaenko](https://eprint.iacr.org/2020/1244
+        
+<div class="my-footer"><p>IETF Hackathon - One Tax API </p></div>      
+---
+  
+
+---
+ # Wrap up
+  ---  
+        
+        
+.left-column[ 
+#### Team members:
+        
+- Benson Muite
+        
+        ]
+.right-column[ 
+#### Other links:
+        
+- [noble-ed25519](https://github.com/paulmillr/noble-ed25519)
+        
+        ]
+
+.left-column[ 
+#### First timers @ IETF/Hackathon:
+	
+-
+
+        ]
+.right-column[ 
+#### Notes and contacts:
+        
+- benson_muite at emailplus dot org
+        
+	]
+
+<div class="my-footer"><p>IETF Hackathon - One Tax API </p></div>
+
+        
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
