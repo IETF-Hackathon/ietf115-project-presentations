@@ -67,7 +67,6 @@ London
 # What got done
         
 - Ideas, add tests for
-  - [Botan](https://github.com/randombit/botan)
   - [LibGcrypt](https://www.gnupg.org/software/libgcrypt/index.html)
   - [LibreSSL](https://www.libressl.org/releases.html)
   - [libtomcrypt](https://github.com/libtom/libtomcrypt)
@@ -77,7 +76,7 @@ London
   - [noble-ed25519](https://github.com/paulmillr/noble-ed25519) 
  
 - New code
- - Implement tests for [Monocypher](https://monocypher.org)
+ - Implement tests for [Botan](https://github.com/randombit/botan), [Monocypher](https://monocypher.org)
    [TweetNaCl](https://tweetnacl.cr.yp.to/), and [WolfSSL](https://github.com/wolfSSL/wolfssl),
  - Pull request to [project repository](https://github.com/novifinancial/ed25519-speccheck/pull/41)
          
@@ -89,7 +88,8 @@ London
 Lessons learned from this hackathon
  - NaCl and NaCl.js pass and fail the same tests from [Chalkias, Garillot and Nikolaenko](https://eprint.iacr.org/2020/1244)
  - Monocypher passes and fails the same tests as OpenSSL 3
- - wolfSSL passes the same tests as OpenSSL 3, but indicates a failure in the verification process for other tests, not a failed verification	    
+ - wolfSSL passes the same tests as OpenSSL 3, but indicates a failure in the verification process for other tests, not a failed verification
+ - Botan passes ed25519-donna and Supercop on which it is derived from	    
 	    
 <div class="my-footer"><p>IETF Hackathon - One Tax API </p></div>      
 ---
